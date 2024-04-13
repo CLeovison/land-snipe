@@ -1,12 +1,13 @@
-import React from 'react'
-import Buttons from './components/Buttons'
+import React, { useState } from "react";
+import LeftNav from "./pages/LeftNav";
 
 export default function App() {
-
   return (
     <>
-    <Buttons label="View" />
-    
+      <nav>
+        <LeftNav />
+
+      </nav>
     </>
-  )
+  );
 }
