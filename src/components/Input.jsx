@@ -5,12 +5,13 @@ export default function Input({ placeholder }) {
 
   const handleChange = (e) => {
     setValue(e.target.value);
+    console.log(value);
   };
   return (
     <>
       <input
         type="text"
-        maxLength={4}
+        maxLength={5}
         placeholder={placeholder}
         onChange={handleChange}
         value={value}
